@@ -1,0 +1,167 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(185, 201, 175);
+  overflow: hidden;
+}
+
+h2 {
+  font-size: medium;
+  margin: 0px;
+  padding: 5px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: left;
+}
+
+.nav__link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  height: 20px;
+  padding: 10px;
+}
+
+.nav__link:hover:not(.nav-active) {
+  background-color: #111;
+}
+
+.nav-active {
+  background-color: #04AA6D;
+}
+
+main {
+  margin-top: 40px; /* below header */
+  padding: 10px;
+  height: calc(100% - 190px); /* header + log panel */
+  overflow: auto;
+}
+
+.panel {
+  width: 100%;
+}
+
+#setup-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#make-panel {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.log__panel {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+p.log__label {
+  font-size: smaller;
+  height: 16px;
+  margin: 0px;
+  padding: 2px;
+  background-color: gray;
+  color: white;
+}
+
+#log__text {
+  background-color: black;
+  color: white;
+  height: 100px;
+  padding: 5px;
+  overflow: auto;
+  vertical-align: bottom;
+}
+
+#log {
+  margin: 0;
+}
+
+
+/* MS BS from here on */
+.ms-welcome__header {
+  padding: 20px;
+  padding-bottom: 30px;
+  padding-top: 100px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ms-welcome__main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  padding: 10px 20px;
+}
+
+.ms-welcome__main > h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.ms-welcome__features {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.ms-welcome__features.ms-List .ms-ListItem {
+  padding-bottom: 20px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
+  margin-right: 10px;
+}
+
+.ms-welcome__action.ms-Button--hero {
+  margin-top: 30px;
+}
+
+.ms-Button.ms-Button--hero .ms-Button-label {
+  color: #0078d7;
+}
+
+.ms-Button.ms-Button--hero:hover .ms-Button-label,
+.ms-Button.ms-Button--hero:focus .ms-Button-label {
+  color: #005a9e;
+  cursor: pointer;
+}
+
+b {
+  font-weight: bold;
+}
